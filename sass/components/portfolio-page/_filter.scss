@@ -1,0 +1,10 @@
+/* modifying filter */
+.portfolio__filter {
+  @extend %flex-centered;
+  flex-direction: row;
+
+  margin-bottom: 50px;
+}
+.portfolio__button {
+  margin-right: 8px;
+}

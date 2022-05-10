@@ -1,0 +1,34 @@
+// utils start
+@import "./utils/variables";
+@import "./utils/vs-hidden";
+@import "./utils/reset";
+// END utils
+
+// placeholder start
+@import "./placeholder/flex-centered";
+@import "./placeholder/logo";
+// END placeholder
+
+// base start
+@import "./base";
+// END base
+
+// header start
+@import "./components/header";
+// END header
+
+// buttons start
+@import "./components/buttons";
+// END buttons
+
+// components start
+@import "./components/main-page/hero-section";
+@import "./components/main-page/modal";
+@import "./components/main-page/sections-main";
+@import "./components/portfolio-page/filter";
+@import "./components/portfolio-page/about-projects-section";
+// END components
+
+// footer start
+@import "./components/footer";
+// END footer

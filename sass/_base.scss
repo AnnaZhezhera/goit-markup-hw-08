@@ -1,0 +1,44 @@
+body {
+  color: getColor("main-text");
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /* outline: 1px solid tomato; */
+}
+
+.title {
+  color: getColor("hd-text");
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  color: getColor("hd-text");
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+  margin-top: 0;
+}
