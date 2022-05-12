@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__inner">
         <nav class="nav-menu">
           <a href="/" class="logo"><span class="logo--blue">Web</span>Studio</a>
@@ -63,14 +63,14 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main class="main-content">
       <section class="hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="button button--primary" data-modal-open>
           Заказать услугу
         </button>
-        <div class="hero__backdrop hero__backdrop--is-hidden" data-modal>
+        <div class="hero__backdrop is-hidden" data-modal>
           <div class="hero__modal">
             <form class="form" autocomplete="off">
               <div role="group" aria-labelledby="contacts-section">
@@ -169,7 +169,7 @@
                   ></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Внимание к деталям</h3>
+              <h3 class="features__subtitle subtitle">Внимание к деталям</h3>
               <p class="features__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
@@ -183,7 +183,7 @@
                   ></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Пунктуальность</h3>
+              <h3 class="features__subtitle subtitle">Пунктуальность</h3>
               <p class="features__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
@@ -197,7 +197,7 @@
                   ></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Планирование</h3>
+              <h3 class="features__subtitle subtitle">Планирование</h3>
               <p class="features__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
@@ -211,7 +211,9 @@
                   ></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Современные технологии</h3>
+              <h3 class="features__subtitle subtitle">
+                Современные технологии
+              </h3>
               <p class="features__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий
@@ -265,7 +267,6 @@
               <img
                 src="images/Игорь.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
                 class="profile-card__ava"
               />
               <h3 class="profile-card__heading">Игорь Демьяненко</h3>
@@ -321,7 +322,6 @@
               <img
                 src="images/Ольга.jpg"
                 alt="Ольга Репина"
-                width="270"
                 class="profile-card__ava"
               />
               <h3 class="profile-card__heading">Ольга Репина</h3>
@@ -377,7 +377,6 @@
               <img
                 src="images/Николай.jpg"
                 alt="Николай Тарасов"
-                width="270"
                 class="profile-card__ava"
               />
               <h3 class="profile-card__heading">Николай Тарасов</h3>
@@ -433,7 +432,6 @@
               <img
                 src="images/Михаил.jpg"
                 alt="Михаил Ермаков"
-                width="270"
                 class="profile-card__ava"
               />
               <h3 class="profile-card__heading">Михаил Ермаков</h3>
@@ -491,107 +489,121 @@
       <section class="about-clients">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
-          <div class="about-clients__list">
-            <a href="" class="about-clients__item">
-              <svg class="about-clients__icon" width="106px" height="60px">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-Logo-1"
-                ></use>
-              </svg>
-            </a>
-            <a href="" class="about-clients__item">
-              <svg class="about-clients__icon" width="106px" height="60px">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-Logo-2"
-                ></use>
-              </svg>
-            </a>
-            <a href="" class="about-clients__item">
-              <svg class="about-clients__icon" width="106px" height="60px">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-Logo-3"
-                ></use>
-              </svg>
-            </a>
-            <a href="" class="about-clients__item">
-              <svg class="about-clients__icon" width="106px" height="60px">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-Logo-4"
-                ></use>
-              </svg>
-            </a>
-            <a href="" class="about-clients__item">
-              <svg class="about-clients__icon" width="106px" height="60px">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-Logo-5"
-                ></use>
-              </svg>
-            </a>
-            <a href="" class="about-clients__item">
-              <svg class="about-clients__icon" width="106px" height="60px">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-Logo-6"
-                ></use>
-              </svg>
-            </a>
-          </div>
+          <ul class="about-clients__list list">
+            <li class="about-clients__item">
+              <a href="">
+                <svg class="about-clients__icon" width="106px" height="60px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-Logo-1"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="about-clients__item">
+              <a href="">
+                <svg class="about-clients__icon" width="106px" height="60px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-Logo-2"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="about-clients__item">
+              <a href="">
+                <svg class="about-clients__icon" width="106px" height="60px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-Logo-3"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="about-clients__item">
+              <a href="">
+                <svg class="about-clients__icon" width="106px" height="60px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-Logo-4"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="about-clients__item">
+              <a href="" class="about-clients__link">
+                <svg class="about-clients__icon" width="106px" height="60px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-Logo-5"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="about-clients__item">
+              <a href="">
+                <svg class="about-clients__icon" width="106px" height="60px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-Logo-6"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer-container container">
-        <div class="footer__contacts contacts">
-          <a href="index.html" class="footer__logo logo"
-            ><span class="logo--blue">Web</span>Studio</a
-          >
-          <address class="contacts__block">
-            <a
-              href="https://goo.gl/maps/mb2MzYeSatuCZ7m78"
-              class="contacts__info-link info-link info-link__map"
+        <div class="footer__flex-block">
+          <div class="footer__contacts contacts">
+            <a href="index.html" class="footer__logo logo"
+              ><span class="logo--blue">Web</span>Studio</a
             >
-              г. Киев, пр-т Леси Украинки, 26</a
-            >
-            <a
-              href="mailto:info@example.com"
-              class="contacts__info-link info-link"
-              >info@example.com</a
-            ><br />
-            <a href="tel:+380961111111" class="contacts__info-link info-link"
-              >+38 096 111 11 11</a
-            >
-          </address>
-        </div>
-        <div>
-          <span class="subtitle subtitle--white">присоединяйтесь</span>
-          <div class="footer-container">
-            <a href="" class="footer-socials">
-              <svg width="20px" height="20px">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-footer-instagram"
-                ></use>
-              </svg>
-            </a>
-            <a href="" class="footer-socials">
-              <svg width="20px" height="20px">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-footer-twitter"
-                ></use>
-              </svg>
-            </a>
-            <a href="" class="footer-socials">
-              <svg width="20px" height="20px">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-footer-facebook"
-                ></use>
-              </svg>
-            </a>
-            <a href="" class="footer-socials">
-              <svg width="20px" height="20px">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-footer-linkedin"
-                ></use>
-              </svg>
-            </a>
+            <address class="contacts__block">
+              <a
+                href="https://goo.gl/maps/mb2MzYeSatuCZ7m78"
+                class="contacts__info-link info-link info-link__map"
+              >
+                г. Киев, пр-т Леси Украинки, 26</a
+              >
+              <a
+                href="mailto:info@example.com"
+                class="contacts__info-link info-link"
+                >info@example.com</a
+              ><br />
+              <a href="tel:+380961111111" class="contacts__info-link info-link"
+                >+38 096 111 11 11</a
+              >
+            </address>
+          </div>
+          <div>
+            <span class="subtitle subtitle--white">присоединяйтесь</span>
+            <div class="footer-container footer-container__soc">
+              <a href="" class="footer-socials">
+                <svg width="20px" height="20px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-footer-instagram"
+                  ></use>
+                </svg>
+              </a>
+              <a href="" class="footer-socials">
+                <svg width="20px" height="20px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-footer-twitter"
+                  ></use>
+                </svg>
+              </a>
+              <a href="" class="footer-socials">
+                <svg width="20px" height="20px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-footer-facebook"
+                  ></use>
+                </svg>
+              </a>
+              <a href="" class="footer-socials">
+                <svg width="20px" height="20px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-footer-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
         <form class="footer__form">

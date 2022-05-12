@@ -15,6 +15,14 @@
 
     margin-bottom: 20px;
   }
+
+  &__flex-block {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 60px;
+    }
+  }
 }
 
 .contacts__info-link {
@@ -39,11 +47,29 @@
 }
 
 .footer-container {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  &__soc {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .footer__contacts {
-  margin-right: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .contacts {
@@ -55,7 +81,12 @@
   display: block;
   color: getColor("white-text");
 
+  text-align: center;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer-socials {
@@ -82,21 +113,36 @@
 }
 
 .footer__form {
-  margin-left: auto;
-  width: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-left: auto;
+    width: 570px;
+  }
 }
 .footer__input-email {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  width: 351px;
-  margin: 0 12px 0 0;
+  width: 100%;
+  margin-bottom: 20px;
 
   background-color: getColor("dark-bg");
   border: 1px solid getColor("footer-form-border");
   border-radius: 4px;
 
   color: getColor("footer-form-text");
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 351px;
+    margin: 0 12px 0 0;
+  }
 
   &:focus-within {
     border: 1px solid getColor("border-cards");
