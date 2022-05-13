@@ -221,15 +221,11 @@
     fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
-  &__link:hover {
-    color: getColor("accent");
-  }
 }
 
 .about-clients__item {
   display: block;
-  border: 5px solid getColor("main-icon");
+  border: 1px solid getColor("main-icon");
   border-radius: 4px;
   color: getColor("main-icon");
   width: calc((100% - 4 * 15px) / 2);
@@ -239,7 +235,7 @@
   &:focus {
     cursor: pointer;
     color: getColor("accent");
-    border: 5px solid getColor("accent");
+    border: 1px solid getColor("accent");
   }
   // &:hover .about-clients__icon {
   //   fill: getColor("accent");
