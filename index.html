@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body class="is-hidden">
     <header class="header">
       <div class="container header__inner">
         <nav class="nav-menu">
@@ -64,12 +64,12 @@
         </ul>
 
         <button type="button" class="header__menu-btn menu-btn">
-          <svg class="header__menu-open-icon" width="40" height="40">
+          <svg class="menu-btn__open-icon" width="40" height="40">
             <use href="./images/icons.svg/symbol-defs.svg#icon-menu_40px"></use>
           </svg>
         </button>
 
-        <div class="mob-menu">
+        <div class="mob-menu is-hidden">
           <div class="container">
             <button type="button" class="mob-menu__close-btn menu-btn">
               <svg class="mob-menu__close-icon" width="40" height="40">
@@ -80,10 +80,12 @@
             </button>
             <ul class="mob-menu__list list">
               <li class="mob-menu__item">
-                <a class="mob-menu__link link" href="">Студия</a>
+                <a class="mob-menu__link link" href="./index.html">Студия</a>
               </li>
               <li class="mob-menu__item">
-                <a class="mob-menu__link link" href="">Портфолио</a>
+                <a class="mob-menu__link link" href="./portfolio.html"
+                  >Портфолио</a
+                >
               </li>
               <li class="mob-menu__item">
                 <a class="mob-menu__link link" href="">Контакты</a>
@@ -286,6 +288,10 @@
             <li class="our-occupation__item">
               <div class="our-occupation__thumb">
                 <img
+                  srcset="
+                    ./images/work1_keybord.jpg    1x,
+                    ./images/work1_keybord-2x.jpg 2x
+                  "
                   src="images/work1_keybord.jpg"
                   alt="Человек пишет код за компьютером"
                   width="370"
@@ -296,6 +302,10 @@
             <li class="our-occupation__item">
               <div class="our-occupation__thumb">
                 <img
+                  srcset="
+                    ./images/work2_laptop.jpg    1x,
+                    ./images/work2_laptop-2x.jpg 2x
+                  "
                   src="images/work2_laptop.jpg"
                   alt="Девушка разрабатівает дизайн для смартфона"
                   width="370"
@@ -306,6 +316,10 @@
             <li class="our-occupation__item">
               <div class="our-occupation__thumb">
                 <img
+                  srcset="
+                    ./images/work3_tablet.jpg    1x,
+                    ./images/work3_tablet-2x.jpg 2x
+                  "
                   src="images/work3_tablet.jpg"
                   alt="Человек выбирает цвет на IPad"
                   width="370"
@@ -322,7 +336,11 @@
           <ul class="about-team__list list">
             <li class="profile-card">
               <img
-                src="images/Игорь.jpg"
+                srcset="
+                  ./images/team-member1.jpg    1x,
+                  ./images/team-member1-2x.jpg 2x
+                "
+                src="images/team-member1.jpg"
                 alt="Игорь Демьяненко"
                 class="profile-card__ava"
               />
@@ -377,7 +395,11 @@
             </li>
             <li class="profile-card">
               <img
-                src="images/Ольга.jpg"
+                srcset="
+                  ./images/team-member2.jpg    1x,
+                  ./images/team-member2-2x.jpg 2x
+                "
+                src="images/team-member2.jpg"
                 alt="Ольга Репина"
                 class="profile-card__ava"
               />
@@ -432,7 +454,11 @@
             </li>
             <li class="profile-card">
               <img
-                src="images/Николай.jpg"
+                srcset="
+                  ./images/team-member3.jpg    1x,
+                  ./images/team-member3-2x.jpg 2x
+                "
+                src="images/team-member3.jpg"
                 alt="Николай Тарасов"
                 class="profile-card__ava"
               />
@@ -487,7 +513,11 @@
             </li>
             <li class="profile-card">
               <img
-                src="images/Михаил.jpg"
+                srcset="
+                  ./images/team-member4.jpg    1x,
+                  ./images/team-member4-2x.jpg 2x
+                "
+                src="images/team-member4.jpg"
                 alt="Михаил Ермаков"
                 class="profile-card__ava"
               />
@@ -680,6 +710,7 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
