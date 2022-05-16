@@ -491,7 +491,6 @@ img {
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -500,6 +499,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .hero {
+    background-color: #2f303a;
     background-position: 50% 10%;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/hero-image-mob.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/hero-image-mob.jpg");
@@ -515,6 +515,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
+    background-color: #2f303a;
     background-position: top;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/hero-image-tablet.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/hero-image-tablet.jpg");
@@ -530,6 +531,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    background-color: #2f303a;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/hero-image-desktop.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/hero-image-desktop.jpg");
   }
