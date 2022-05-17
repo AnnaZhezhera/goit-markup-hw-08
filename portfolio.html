@@ -23,12 +23,12 @@
           <a href="/" class="logo"><span class="logo--blue">Web</span>Studio</a>
           <ul class="nav-menu__list list">
             <li class="nav-menu__item">
-              <a href="index.html" class="nav-menu__link link">Студия</a>
+              <a href="/" class="nav-menu__link">Студия</a>
             </li>
             <li class="nav-menu__item">
               <a
                 href="./portfolio.html"
-                class="nav-menu__link nav-menu__link--current link"
+                class="nav-menu__link link nav-menu__link--current link"
                 >Портфолио</a
               >
             </li>
@@ -62,6 +62,65 @@
             </a>
           </li>
         </ul>
+
+        <button type="button" class="header__menu-btn menu-btn">
+          <svg class="menu-btn__open-icon" width="40" height="40">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+
+        <div class="mob-menu is-hidden">
+          <div class="container">
+            <button type="button" class="mob-menu__close-btn menu-btn">
+              <svg class="mob-menu__close-icon" width="40" height="40">
+                <use
+                  href="./images/icons.svg/symbol-defs.svg#icon-close_40px"
+                ></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="./index.html">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="">Контакты</a>
+              </li>
+            </ul>
+            <ul class="mob-menu__contacts-list list">
+              <li class="mob-menu__contact-item">
+                <a href="tel:+380961111111" class="mob-menu__tel-link link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-menu__icontact-tem">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-menu__mail-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu__soc-list list">
+              <li class="mob-menu__soc-item">
+                <a class="mob-menu__soc-link link" href="">Instagram</a>
+              </li>
+              <li class="mob-menu__soc-item">
+                <a class="mob-menu__soc-link link" href="">Twitter</a>
+              </li>
+              <li class="mob-menu__soc-item">
+                <a class="mob-menu__soc-link link" href="">Facebook</a>
+              </li>
+              <li class="mob-menu__soc-item">
+                <a class="mob-menu__soc-link link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -93,9 +152,9 @@
               </button>
             </li>
           </ul>
-          <ul class="project list">
-            <li class="project__card card">
-              <a href="" class="link">
+          <ul class="projects list">
+            <li class="projects__card card">
+              <a href="" class="projects__link link">
                 <div class="card__thumb">
                   <img
                     srcset="
@@ -121,8 +180,8 @@
                 </div></a
               >
             </li>
-            <li class="project__card card">
-              <a href="" class="link">
+            <li class="projects__card card">
+              <a href="" class="projects__link link">
                 <div class="card__thumb">
                   <img
                     srcset="
@@ -150,8 +209,8 @@
                 </div></a
               >
             </li>
-            <li class="project__card card">
-              <a href="" class="link">
+            <li class="projects__card card">
+              <a href="" class="projects__link link">
                 <div class="card__thumb">
                   <img
                     srcset="
@@ -177,8 +236,8 @@
                 </div></a
               >
             </li>
-            <li class="project__card card">
-              <a href="" class="link">
+            <li class="projects__card card">
+              <a href="" class="projects__link link">
                 <div class="card__thumb">
                   <img
                     srcset="
@@ -204,8 +263,8 @@
                 </div></a
               >
             </li>
-            <li class="project__card card">
-              <a href="" class="link">
+            <li class="projects__card card">
+              <a href="" class="projects__link link">
                 <div class="card__thumb">
                   <img
                     class="card__img"
@@ -232,8 +291,8 @@
                 </div></a
               >
             </li>
-            <li class="project__card card">
-              <a href="" class="link">
+            <li class="projects__card card">
+              <a href="" class="projects__link link">
                 <div class="card__thumb">
                   <img
                     srcset="
@@ -259,8 +318,8 @@
                 </div></a
               >
             </li>
-            <li class="project__card card">
-              <a href="" class="link">
+            <li class="projects__card card">
+              <a href="" class="projects__link link">
                 <div class="card__thumb">
                   <img
                     srcset="
@@ -286,8 +345,8 @@
                 </div></a
               >
             </li>
-            <li class="project__card card">
-              <a href="" class="link">
+            <li class="projects__card card">
+              <a href="" class="projects__link link">
                 <div class="card__thumb">
                   <img
                     srcset="
@@ -313,8 +372,8 @@
                 </div></a
               >
             </li>
-            <li class="project__card card">
-              <a href="" class="link">
+            <li class="projects__card card">
+              <a href="" class="projects__link link">
                 <div class="card__thumb">
                   <img
                     srcset="
@@ -346,7 +405,7 @@
     </main>
     <footer class="footer">
       <div class="footer-container container">
-        <div class="footer__flex-block">
+        <div class="footer__contacts-flex-block">
           <div class="footer__contacts contacts">
             <a href="index.html" class="footer__logo logo"
               ><span class="logo--blue">Web</span>Studio</a
